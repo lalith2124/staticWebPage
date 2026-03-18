@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carint – Transport Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="carint.css" />
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar" role="banner">
+    <a href="tel:+912345627789"><i class="fa-solid fa-phone" aria-hidden="true"></i> +91 23456 27789</a>
+    <a href="mailto:xyz@gmail.com"><i class="fa-solid fa-square-envelope" aria-hidden="true"></i> xyz@gmail.com</a>
+    <a href="#contact"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Find Us</a>
+  </div>
+
+  <!-- Navbar -->
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="#" class="logo">Car<span>int</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="#" class="btn-login"><i class="fa-solid fa-user" aria-hidden="true"></i> Login</a>
+      <button class="btn-search" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="home">
+    <div class="hero-inner">
+      <span class="hero-tag">Trusted Since 2010</span>
+      <h1>We Provide the Best Transport Service</h1>
+      <p>Reliable, on-time logistics solutions across air, road, rail and sea — tailored to your business needs and delivered with care.</p>
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get A Quote</button>
+        <button class="btn-outline" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Our Services</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Stats -->
+  <div class="stats" role="region" aria-label="Company highlights">
+    <div><div class="stat-num">12K+</div><div class="stat-label">Shipments Delivered</div></div>
+    <div><div class="stat-num">98%</div><div class="stat-label">On-Time Rate</div></div>
+    <div><div class="stat-num">80+</div><div class="stat-label">Countries Covered</div></div>
+    <div><div class="stat-num">15 Yrs</div><div class="stat-label">Industry Experience</div></div>
+  </div>
+
+  <!-- Services -->
+  <section id="services" aria-labelledby="services-title">
+    <div class="services-header">
+      <p class="section-tag">What We Do</p>
+      <h2 class="section-title" id="services-title">Our Services</h2>
+      <p class="section-sub">From air freight to last-mile delivery, we cover every leg of your supply chain with precision and care.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-img"><i class="fa-solid fa-plane" aria-hidden="true"></i></div>
+        <div class="service-body">
+          <h3>Air Transport</h3>
+          <p>Fast, secure air freight solutions connecting major global hubs — ideal for time-sensitive cargo.</p>
+          <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="service-card">
+        <div class="service-img"><i class="fa-solid fa-truck" aria-hidden="true"></i></div>
+        <div class="service-body">
+          <h3>Truck Transport</h3>
+          <p>Full-truck and part-load options across major corridors, with real-time GPS tracking built in.</p>
+          <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="service-card">
+        <div class="service-img"><i class="fa-solid fa-ship" aria-hidden="true"></i></div>
+        <div class="service-body">
+          <h3>Cargo Transport</h3>
+          <p>Sea freight and containerised cargo services offering cost-effective bulk shipment worldwide.</p>
+          <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="service-card">
+        <div class="service-img"><i class="fa-solid fa-train" aria-hidden="true"></i></div>
+        <div class="service-body">
+          <h3>Train Transport</h3>
+          <p>Eco-friendly rail logistics with high capacity — a smart choice for long-haul inland freight.</p>
+          <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" aria-labelledby="about-title">
+    <div class="about-img">
+      <img
+        src="about-img.jpg"
+        alt="Carint team at work"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+      />
+      <div class="about-img-placeholder" style="display:none; width:100%; height:100%; align-items:center; justify-content:center;">
+        <i class="fa-solid fa-warehouse"></i>
+      </div>
+    </div>
+    <div class="about-content">
+      <p class="section-tag">Who We Are</p>
+      <h2 class="section-title" id="about-title">About Us</h2>
+      <p class="section-sub">We've spent over 15 years building a logistics network you can rely on — from end-to-end supply chain management to bespoke last-mile delivery. Our promise is simple: your cargo arrives safely, on time, every time.</p>
+      <div class="about-features">
+        <div class="about-feature">
+          <div class="about-feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="about-feature-text">
+            <h4>Fully Insured Cargo</h4>
+            <p>Comprehensive coverage on every shipment, giving you total peace of mind.</p>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon"><i class="fa-solid fa-location-crosshairs"></i></div>
+          <div class="about-feature-text">
+            <h4>Real-Time Tracking</h4>
+            <p>Live GPS and status updates accessible from any device, anytime.</p>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon"><i class="fa-solid fa-headset"></i></div>
+          <div class="about-feature-text">
+            <h4>24/7 Support</h4>
+            <p>A dedicated team ready to assist you around the clock, worldwide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="btn-primary">Read More</button>
+    </div>
+  </section>
+
+  <!-- Track Shipment -->
+  <section id="track" aria-labelledby="track-title">
+    <p class="section-tag">Tracking</p>
+    <h2 class="section-title" id="track-title">Track Your Shipment</h2>
+    <p class="section-sub">Enter your unique tracking number to get the latest status of your shipment in real time.</p>
+    <div class="track-form">
+      <input type="text" placeholder="Enter your tracking number" aria-label="Tracking number" />
+      <button class="btn-primary">Track <i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="contact-form-side">
+      <p class="section-tag">Get In Touch</p>
+      <h2 class="section-title" id="contact-title">Contact Us</h2>
+      <div class="form-group">
+        <label for="c-name">Your Name</label>
+        <input type="text" id="c-name" placeholder="Jane Smith" autocomplete="name" />
+      </div>
+      <div class="form-group">
+        <label for="c-phone">Phone Number</label>
+        <input type="tel" id="c-phone" placeholder="+91 98765 43210" autocomplete="tel" />
+      </div>
+      <div class="form-group">
+        <label for="c-email">Email Address</label>
+        <input type="email" id="c-email" placeholder="jane@example.com" autocomplete="email" />
+      </div>
+      <div class="form-group">
+        <label for="c-msg">Message</label>
+        <textarea id="c-msg" placeholder="Tell us about your shipment…"></textarea>
+      </div>
+      <button class="btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+    <div class="map-side">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.2857089940776!2d77.55134310442237!3d12.980943886095966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d8b94643243%3A0x40375a113400fb58!2sJSpiders%20Rajajinagar!5e0!3m2!1sen!2sin!4v1745744267606!5m2!1sen!2sin"
+        title="Our location on Google Maps"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Car<span>int</span></div>
+        <p>Delivering reliability across air, road, rail, and sea since 2010. Your cargo, our commitment.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Address</h4>
+        <address>
+          <i class="fa-solid fa-location-dot"></i> JSpiders, Rajajinagar<br>
+          <i class="fa-solid fa-phone"></i> +91 23456 27789<br>
+          <i class="fa-solid fa-envelope"></i> xyz@gmail.com
+        </address>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>Get logistics tips and company news delivered to your inbox.</p>
+        <div class="subscribe-row">
+          <input type="email" placeholder="Enter your email" aria-label="Email for newsletter" />
+          <button type="button">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Carint. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    const icon      = document.getElementById('hamburger-icon');
+
+    hamburger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', open);
+      icon.className = open ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+    });
+
+    // Close menu on nav link click
+    navLinks.querySelectorAll('a').forEach(a =>
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', false);
+        icon.className = 'fa-solid fa-bars';
+      })
+    );
+
+    // Scroll-in animation via IntersectionObserver
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.service-card, .about-feature, .stat-num').forEach(el => {
+      el.style.cssText += 'opacity:0;transform:translateY(28px);transition:opacity .55s ease,transform .55s ease;';
+      io.observe(el);
+    });
+  </script>
+
+</body>
+</html>
